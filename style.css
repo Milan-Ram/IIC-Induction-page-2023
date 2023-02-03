@@ -935,6 +935,11 @@ header h2 {
         width: 100%;
         flex-direction: column-reverse;
     }
+    .hero-section-data{
+    line-height:1rem;
+/*     margin: 0.8rem 0; */
+}
+
 
     .hero-section-img img {
         top: 0.5rem;
