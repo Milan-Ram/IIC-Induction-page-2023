@@ -958,7 +958,7 @@ header h2 {
     .hero-section-img img {
         top: -7rem;
         height: 400px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .about-section {
