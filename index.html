@@ -42,6 +42,47 @@
               <div class="video-iframe d-flex" ><iframe width="560" height="315" src="https://www.youtube.com/embed/Oxi75-pyT50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
             </div>
             <!-- video div -->
+            <!-- video div -->
+            <div class="signIn-popup">
+              <!-- <video src="./assets/img/portfolio/"></video> -->
+              <!-- <div class="video-iframe d-flex" ><iframe width="560" height="315" src="https://www.youtube.com/embed/Oxi75-pyT50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div> -->
+              <div class="signIn-image"><img src="./astronaut.avif" alt=""></div>
+              
+              <!-- form========================================================== -->
+              <form action="" class="signIn d-flex">
+                <span class="mobile-menu-close"><i id="signIn-popup-close-btn" class=" ri signIn-close-icon ri-close-line"></i></span>
+                <h2>Idea Innovation Cell</h2>
+                <div class="grid-col-two">
+                  <label for="user-name">Name</label>
+                  <input type="text" id="user-name" placeholder="First Name" autocomplete="off">
+                  <input type="text" placeholder="Last Name" autocomplete="off">
+                </div>
+                <label for="user-email">Email</label>
+                <input type="email" name="user-email" id="user-email" placeholder="enter your email address " autocomplete="off">
+                <label for="user-email">Phone Number</label>
+                <input type="number" name="user-phone-number" id="user-phone-number" placeholder="phone number" autocomplete="off">
+                <label for="user-branch">Branch</label>
+                <input type="text" name="user-branch" id="user-branch" placeholder="Branch" autocomplete="off">
+                <div  class="grid-col-two">
+                  <label for="domain-preference">Your Domain Preferences</label>
+                  <select name="domain-preference" id="domain-preference" autocomplete="off">
+                    <option value="option 1">Preference 1</option>
+                    <option value="option 1">Cs-Electronics</option>
+                    <option value="option 1">Mechanical</option>
+                    <option value="option 1">Chemical</option>
+                  </select>
+                  <select name="domain-preference" id="domain-preference" autocomplete="off">
+                    <option value="option 1">Preference2</option>
+                    <option value="option 1">Cs-Electronics</option>
+                    <option value="option 1">Mechanical</option>
+                    <option value="option 1">Chemical</option>
+                  </select>
+                  <a href="https://www.mentimeter.com/signup?referral=features/quiz-presentations" class="quiz-btn">Continue to Quiz</a>
+                </div>
+              </form>
+              <!-- form end ================================================ -->
+            </div>
+            <!-- video div -->
           <section id="hero" class="hero-section d-flex">
           
             
@@ -75,7 +116,8 @@
                   programme.
                 </p>
               </div>
-              <a  href="./login/index.html" class="btn btn-log-in">Login</a>
+              <button   class="btn btn-log-in signIn-btn">Login</button>
+              <!-- <a  href="./login/index.html" class="btn btn-log-in">Login</a> -->
             </div>
           </section>
           <section id="cta" class="cta d-flex">
@@ -318,6 +360,16 @@ links.forEach(element => {
   })
   closeicon.addEventListener('click',()=>{
     videoPopUp.style.display = "none";
+  })
+  // signIn popup
+  const closeicon2 = document.getElementById('signIn-popup-close-btn');
+  const signInPopUp = document.querySelector('.signIn-popup');
+  const signinBtn = document.querySelector('.signIn-btn');
+  signinBtn.addEventListener('click',()=>{
+    signInPopUp.style.display = "block";
+  })
+  closeicon2.addEventListener('click',()=>{
+    signInPopUp.style.display = "none";
   })
 </script>
   </body>
