@@ -1000,7 +1000,7 @@ header h2 {
  /* ////////////////// */
  .signIn-popup {
     width: 100vw;
-    height: 94vh;
+    height: 92vh;
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -1024,7 +1024,7 @@ header h2 {
   }
   .signIn-popup form label {
     font-size: 0.75rem;
-    margin:0.7rem 0.8rem 0rem;
+    margin:0.9rem 0.8rem 0.3rem;
   }
   .signIn-popup form > input {
     width: 100%;
